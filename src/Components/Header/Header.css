@@ -1,0 +1,21 @@
+header {
+    background-color: #AB2A19;
+    height: 11vh;
+    display: flex;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+}
+
+header h1 {
+    font-size: 3rem;
+    line-height: 11vh;
+    margin-left: 50px;
+}
+
+header img {
+    height: 50px;
+    width: 50px;
+}

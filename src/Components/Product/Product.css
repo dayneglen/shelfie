@@ -1,0 +1,39 @@
+.product-wrapper {
+    background-color: #D34735;
+    margin: 30px auto;
+    width: 80%;
+    border-radius: 10px;
+    display: flex;
+
+}
+
+.product-wrapper img {
+    height: 200px;
+    width: 250px;
+    margin: 10px 10px;
+}
+
+.info-container {
+    position: relative;
+    height: 200px;
+    width: 250px;
+
+}
+
+.info-container h3 {
+    font-size: 1.5rem;
+    margin: 5px;
+    z-index: 0;
+}
+
+.product-btns {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.product-btns button {
+    background-color: #3AD886;
+}
