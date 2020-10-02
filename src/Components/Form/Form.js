@@ -49,7 +49,8 @@ class Form extends Component {
     }
 
 
-    addProduct(name, price, img) {
+    addProduct(e, name, price, img) {
+        e.preventDefault();
         if (img === '') {
             img = 'https://th.bing.com/th/id/OIP.SUH-o5BDArUXdFu34UxReQHaFj?w=250&h=187&c=7&o=5&dpr=2&pid=1.7'
         }
@@ -76,7 +77,7 @@ class Form extends Component {
                         <button className='btn' onClick={this.clearInputs}>Cancel</button>
                         {this.state.edit
                             ? <button className='btn' type='submit' onClick={(e) => this.editProduct(e, name, price, img)}>Save Changes</button>
-                            : <button className='btn' type='submit' onClick={() => this.addProduct(name, price, img)}>Add to Inventory</button>}
+                            : <button className='btn' type='submit' onClick={(e) => this.addProduct(e, name, price, img)}>Add to Inventory</button>}
 
                     </section>
                 </form>

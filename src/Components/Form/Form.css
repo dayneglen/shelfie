@@ -1,9 +1,9 @@
 .form-wrapper {
+    width: 30vw;
+    padding: 5px;
     background-color: #3AD886;
-    border-radius: 10px;
-    position: fixed;
-    top: 150px;
-    right: 200px;
+    border-radius: 15px;
+    margin: 160px auto;
 }
 
 .form-wrapper h3 {

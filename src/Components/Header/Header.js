@@ -7,13 +7,8 @@ const Header = props => {
         <header>
             <h1>Shelfie</h1>
             <section className='links-container'>
-                <Link to={{
-                    pathname: '/',
-                    dataProps: {
-
-                    }
-                }}>Dashboard</Link>
-                <Link to='add'>Add Inventory</Link>
+                <Link to='/'>Dashboard</Link>
+                <Link to='/add'>Add Inventory</Link>
             </section>
             
         </header>
