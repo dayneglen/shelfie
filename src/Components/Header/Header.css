@@ -1,7 +1,6 @@
 header {
     background-color: #AB2A19;
     height: 11vh;
-    display: flex;
     color: white;
     position: fixed;
     width: 100%;
@@ -16,7 +15,32 @@ header h1 {
     letter-spacing: .2rem;
 }
 
+
+
 header img {
     height: 50px;
     width: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-container a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a {
+    line-height: 11vh;
+    margin: 30px;
+    font-size: 1.5rem;
+   
 }

@@ -15,6 +15,7 @@ massive({
     console.log('db connected');
 })
 
+app.get(`/api/inventory/:id`, ctrl.getProduct);
 app.get('/api/inventory', ctrl.getInventory);
 app.post('/api/product', ctrl.addProduct);
 app.delete('/api/product/:id', ctrl.deleteProduct);

@@ -7,6 +7,3 @@ INSERT INTO product (
     ${price},
     ${img}
 );
-
-SELECT * FROM product
-ORDER BY product_id ASC;

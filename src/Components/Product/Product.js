@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
 import './Product.css';
 
 class Product extends Component {
     render() {
         const { product } = this.props;
-        const { deleteProductFn, productToEdit } = this.props;
+        const { deleteProductFn} = this.props;
         return (
             <section className='product-wrapper'>
                 <section className='img-container'>
@@ -15,7 +16,15 @@ class Product extends Component {
                     <h3>${product.price}</h3>
                     <section className='product-btns'>
                         <button className='btn' onClick={() => deleteProductFn(product.product_id)}>Delete</button>
-                        <button className='btn' onClick={() => productToEdit(product.product_id)}>Edit</button>
+                        <Link to={{
+                            pathname: `/edit/${product.product_id}`,
+                            dataProps: {
+                                product: product
+                            }
+                        }}>
+                            <button className='btn'>Edit</button>
+                        </Link>
+                        
                     </section>
                 </section>
             </section>

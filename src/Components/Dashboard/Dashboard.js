@@ -23,13 +23,13 @@ class Dashboard extends Component {
 
     deleteProduct = id => {
         axios.delete(`/api/product/${id}`).then(() => {
-            this.props.getInventoryFn();
+            this.getInventory();
         }).catch(err => console.log(err));
     }
 
     render() {
         const inventoryList = this.state.inventory.map((product, i) => (
-            <Product key={i} product={product} productToEdit={this.state.productToEdit} deleteProductFn={this.deleteProduct} />
+            <Product key={i} product={product} deleteProductFn={this.deleteProduct} />
         ));
 
         return (

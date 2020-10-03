@@ -5,11 +5,16 @@ import './Header.css';
 const Header = props => {
     return (
         <header>
-            <h1>Shelfie</h1>
-            <section className='links-container'>
-                <Link to='/'>Dashboard</Link>
-                <Link to='/add'>Add Inventory</Link>
+            <section className='header-container'>
+                <Link to='/'>
+                    <h1>Shelfie</h1>
+                </Link>
+                <nav className='links-container'>
+                    <Link to='/'>Dashboard</Link>
+                    <Link to='/add'>Add Inventory</Link>
+                </nav>
             </section>
+           
             
         </header>
     )
